@@ -1,0 +1,99 @@
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+   
+   
+   @import "tailwindcss";
+
+ @theme {
+  --font-Mont: "Montserrat", sans-serif;
+  --color-first:#222222;
+  --color-second:#09AEEA;
+  --color-third:#666666;
+
+}
+.my-style{
+  font-family:"Montserrat", sans-serif; 
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+
+}
+ .my-style1{
+  font-family: "Montserrat", sans-serif ;
+  font-weight: 400; 
+  font-size: 15px;
+  line-height: 26px;
+  color: #666666;
+ }
+ html {
+  scroll-behavior: smooth;
+}
+ @media (min-height:320px) and (max-width:575px) {
+  nav{
+padding: 10px 0 5px 17px;
+}
+  
+  .nav-part{
+    display: inline;
+  }
+  .nav-part ul{
+    display: inline;
+  }
+  .hero{
+   display: inline;
+   
+  }
+  .hero h1{
+   
+    font-size: 26px;
+    line-height: 35px;
+    width: 382px;
+    
+    padding: 31px 12px 0 12px;
+
+
+  }
+  .hero p{
+   
+    font-size: 20px;
+    width: 299px;
+    text-align: justify;
+
+    padding: 0 0 12px 12px;
+  }
+  .btn1{
+    margin-left:12px
+  }
+  .btn2{
+    margin-top:20px;
+    margin-bottom:24px
+  }
+  .hero-image{
+   
+  }
+  .promotion{
+    
+    font-size: 28px;
+    margin-left: 12px;
+
+  }
+  .data-part{
+    display: flex;
+    flex-direction: column;
+  }
+  .data-part h1{
+    
+    font-size: 26px;
+    margin-left: 12px;
+    width: 301px;
+    line-height: 34px;
+    text-align: center;
+
+  }
+  
+      
+    
+ }
+    
+  
+  
+ 
