@@ -27,72 +27,51 @@
  html {
   scroll-behavior: smooth;
 }
- @media (min-height:320px) and (max-width:575px) {
-  nav{
-padding: 10px 0 5px 17px;
-}
-  
-  .nav-part{
-    display: inline;
-  }
-  .nav-part ul{
-    display: inline;
-  }
-  .hero{
-   display: inline;
-   
-  }
-  .hero h1{
-   
-    font-size: 26px;
-    line-height: 35px;
-    width: 382px;
-    
-    padding: 31px 12px 0 12px;
 
 
-  }
-  .hero p{
-   
-    font-size: 20px;
-    width: 299px;
-    text-align: justify;
 
-    padding: 0 0 12px 12px;
+@media (min-width:320px) and (max-width:500px) {
+  .logo{
+    padding: 0 0 0 20px;
   }
-  .btn1{
-    margin-left:12px
+  .ThreeLine{
+      display: flex;
   }
-  .btn2{
-    margin-top:20px;
-    margin-bottom:24px
-  }
-  .hero-image{
-   
-  }
-  .promotion{
-    
-    font-size: 28px;
-    margin-left: 12px;
 
+  .itemList{
+    display: none;
   }
-  .data-part{
-    display: flex;
+
+  .heroFlex{
     flex-direction: column;
   }
-  .data-part h1{
+
+
+  .heroBtn1{
+    display: none;
+  }
+
+
+  .heroBtn2{
+    display: block;
+  }
+
+
+  .Hero{
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .Hero h1{
+    width: 100%;
     
-    font-size: 26px;
-    margin-left: 12px;
-    width: 301px;
-    line-height: 34px;
-    text-align: center;
+  }
+  .Hero p{
+    width: 100%;
 
   }
-  
-      
-    
- }
+
+}
     
   
   

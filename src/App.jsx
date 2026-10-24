@@ -12,7 +12,7 @@ import Footer from './Layouts/Footer'
   
   const App = () => {
     return (
-      <div>
+      <>
         <Container></Container>
         <Flex></Flex>
         <Navbar/>
@@ -23,7 +23,7 @@ import Footer from './Layouts/Footer'
         <Theme/>
         <Website/>
         <Footer/>
-      </div>
+      </>
     )
   }
   
