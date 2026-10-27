@@ -14,10 +14,10 @@ import Flex from '../Components/Flex'
 
 const Promotion = () => {
   return (
-    <section id='features' className='pb-15 scroll-mt-40'>
+    <section  className='pb-15 scroll-mt-40'>
       <Container>
         <h1 className=' promotion my-style  pt-13 pb-15 text-first text-center'>Powerful Theme For Your Promotion</h1>
-        <Flex className="flex-wrap gap-x-4 gap-y-19.25 ml-10">
+        <Flex className="promotion-cards flex-wrap gap-x-4 gap-y-19.25 ml-10">
           <PromotionCard Image={promotion1Image}
             heading="Fully Responsive" description="BreezyCV ready to look stunning on any device – from a widescreen monitor to a mobile phone." />
           <PromotionCard Image={promotion2Image}

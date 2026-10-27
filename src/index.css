@@ -1,13 +1,19 @@
    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
    
    
    @import "tailwindcss";
 
  @theme {
   --font-Mont: "Montserrat", sans-serif;
+  --font-han: "Hanken Grotesk", sans-serif;
+  --font-inter: "Inter", sans-serif;
   --color-first:#222222;
   --color-second:#09AEEA;
   --color-third:#666666;
+  --color-fourth:#FC5546;
+  --color-fifth:#ffffff;
 
 }
 .my-style{
@@ -28,51 +34,220 @@
   scroll-behavior: smooth;
 }
 
+ * {
+   box-sizing: border-box;
+ }
 
+ body {
+   margin: 0;
+   overflow-x: clip;
+ }
 
-@media (min-width:320px) and (max-width:500px) {
-  .logo{
-    padding: 0 0 0 20px;
-  }
-  .ThreeLine{
-      display: flex;
-  }
+ img {
+   max-width: 100%;
+ }
 
-  .itemList{
-    display: none;
-  }
+ .container {
+   width: 100%;
+   max-width: 1240px;
+   margin-inline: auto;
+   padding-inline: 24px;
+ }
 
-  .heroFlex{
-    flex-direction: column;
-  }
+ .my-style {
+   font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+   line-height: 1.2;
+ }
 
+ .theme-card-column > div + div {
+   margin-top: 32px;
+ }
 
-  .heroBtn1{
-    display: none;
-  }
+ .theme-cards {
+   align-items: flex-start;
+ }
 
+ .theme-card-column {
+   flex: 1 1 0;
+   min-width: 0;
+ }
 
-  .heroBtn2{
-    display: block;
-  }
+ .theme-review-card {
+   width: 100%;
+ }
 
+ .theme-review-card p,
+ .theme-review-heading {
+   width: 100%;
+ }
 
-  .Hero{
-    max-width: 90%;
-    margin: 0 auto;
-  }
+ @media (max-width: 767px) {
+   .container {
+     padding-inline: 20px;
+   }
 
-  .Hero h1{
-    width: 100%;
-    
-  }
-  .Hero p{
-    width: 100%;
+   .hero {
+     flex-direction: column;
+     gap: 32px;
+   }
 
-  }
+   .hero-copy,
+   .hero-copy h1,
+   .hero-copy p,
+   .hero-visual {
+     width: 100%;
+     max-width: 100%;
+   }
 
-}
-    
-  
-  
+   .hero-copy h1 {
+     font-size: clamp(2rem, 7vw, 2.75rem);
+     line-height: 1.15;
+   }
+
+   .hero-visual {
+     height: auto;
+     aspect-ratio: 1.35;
+   }
+
+   .hero-visual img,
+   .hero-visual > div {
+     height: 100%;
+   }
+
+   .promotion-cards {
+     justify-content: center;
+     gap: 48px 24px;
+     margin-left: 0;
+   }
+
+   .promotion-cards > div {
+     width: min(100%, 280px);
+   }
+
+   .data-part {
+     flex-direction: column;
+     gap: 16px;
+   }
+
+   .data-part .data-copy,
+   .data-part .data-copy h1,
+   .data-part .data-visual {
+     width: 100%;
+     max-width: 100%;
+   }
+
+   .data-part .data-copy {
+     padding-block: 48px 0;
+   }
+
+   .data-part .data-visual {
+     height: auto;
+     padding-top: 0;
+   }
+
+   .data-part .data-visual img {
+     height: auto;
+   }
+
+   .demo-cards {
+     justify-content: center;
+     gap: 24px 16px;
+     margin-left: 0;
+   }
+
+   .demo-cards img {
+     width: min(100%, 290px);
+     height: auto;
+     aspect-ratio: 290 / 219;
+     object-fit: cover;
+   }
+
+   .theme-cards {
+     flex-direction: column;
+     gap: 24px;
+   }
+
+   .theme-card-column {
+     width: 100%;
+     margin-top: 0;
+   }
+
+   .theme-review-card p,
+   .theme-review-heading {
+     width: 100%;
+     max-width: 100%;
+     overflow-wrap: anywhere;
+   }
+ }
+
+ @media (max-width: 480px) {
+   .container {
+     padding-inline: 16px;
+   }
+
+   .hero {
+     gap: 24px;
+   }
+
+   .hero > div:first-child {
+     padding-top: 0;
+   }
+
+   .hero-copy h1 {
+     padding-top: 0;
+   }
+
+   .hero-copy button {
+     padding: 10px 12px;
+     font-size: 0.875rem;
+   }
+
+   .hero-copy button + button {
+     margin-left: 8px;
+   }
+
+   .promotion,
+   .demo-cards,
+   .theme-cards,
+   .data-part,
+   .website-cta {
+     padding-bottom: 40px;
+   }
+
+   .theme-review-card {
+     padding: 20px;
+   }
+
+   footer {
+     padding-block: 24px;
+   }
+ }
+
+ @media (min-width: 1024px) {
+   .promotion-cards.flex {
+     display: grid;
+     grid-template-columns: repeat(4, minmax(0, 1fr));
+     gap: 48px 16px;
+     margin-left: 0;
+   }
+
+   .promotion-cards > div {
+     width: 100%;
+     min-width: 0;
+   }
+
+   .demo-cards.flex {
+     display: grid;
+     grid-template-columns: repeat(4, minmax(0, 1fr));
+     gap: 28px 16px;
+     margin-left: 0;
+   }
+
+   .demo-cards img {
+     width: 100%;
+     height: auto;
+     aspect-ratio: 290 / 219;
+     object-fit: cover;
+   }
+ }
  

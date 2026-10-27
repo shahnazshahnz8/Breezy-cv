@@ -1,31 +1,16 @@
-  import React from 'react'
-import Container from './Components/Container'
-import Navbar from './Layouts/Navbar'
-import Flex from './Components/Flex'
-import Hero from './Layouts/Hero'
-import Promotion from './Layouts/Promotion'
-import Data from './Layouts/Data'
-import Demo from './Layouts/Demo'
-import Theme from './Layouts/Theme'
-import Website from './Layouts/Website'
-import Footer from './Layouts/Footer'
-  
-  const App = () => {
-    return (
-      <>
-        <Container></Container>
-        <Flex></Flex>
-        <Navbar/>
-        <Hero/>
-        <Promotion/>
-        <Data/>
-        <Demo/>
-        <Theme/>
-        <Website/>
-        <Footer/>
-      </>
-    )
-  }
-  
-  export default App
-  
+import { BrowserRouter, Routes, Route } from 'react-router'
+import Home from './Pages/Home'
+import About from './Pages/About'
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+export default App
