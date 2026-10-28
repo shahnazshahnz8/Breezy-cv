@@ -1,4 +1,3 @@
-import React from 'react'
 import Container from '../Components/Container'
 import PromotionCard from '../Components/PromotionCard'
 import promotion1Image from '../assets/promotion1.png'

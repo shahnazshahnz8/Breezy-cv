@@ -1,4 +1,3 @@
- import React from 'react'
 import Container from '../Components/Container'
 import Flex from '../Components/Flex'
 import ThemeCard from '../Components/ThemeCard'

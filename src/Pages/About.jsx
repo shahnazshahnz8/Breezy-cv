@@ -1,4 +1,3 @@
-import React from 'react'
 import TakeprofHero from '../Layouts/TakeprofHero'
 import Navbar from '../Layouts/Navbar'
 import Software from '../Layouts/Software'

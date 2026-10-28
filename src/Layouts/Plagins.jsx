@@ -1,4 +1,3 @@
-  import React from 'react'
   import plaginImage from '../assets/plagin.png'
   
   const Plagins = () => {

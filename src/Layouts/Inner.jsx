@@ -1,4 +1,3 @@
-import React from 'react'
 import Container from '../Components/Container'
 import inner1Image from '../assets/inner1.png'
 import inner2Image from '../assets/inner2.png'

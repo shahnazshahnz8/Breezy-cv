@@ -1,4 +1,3 @@
-  import React from 'react'
  
   const PromotionCard = ({Image, heading, description,className,descriptionClass,headingClass}) => {
      const words = heading.split(" ")

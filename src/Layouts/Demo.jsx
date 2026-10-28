@@ -1,4 +1,3 @@
-import React from 'react'
 import Container from '../Components/Container'
 import Flex from '../Components/Flex'
 import demo1Image from '../assets/demo1.png'

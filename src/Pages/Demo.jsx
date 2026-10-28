@@ -1,13 +1,8 @@
-  import React from 'react'
-  import Demo from '../Components/Demo'
-  
-  const Demo = () => {
-    return (
-      <div>
-        <Demo/>
-      </div>
-    )
-  }
-  
-  export default Demo
+import DemoSection from '../Layouts/Demo'
+
+const DemoPage = () => {
+  return <DemoSection />
+}
+
+export default DemoPage
   
