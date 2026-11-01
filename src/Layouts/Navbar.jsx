@@ -15,7 +15,7 @@ const Navbar = () => {
           </div>
           <ul className="hidden items-center gap-x-11 font-Mont font-semibold text-[15px] leading-7.75 text-first md:flex">
             <li><Link to="/about">About</Link></li>
-            <li>Features</li>
+            <li><Link to="/features">Features</Link></li>
             <li>Demos</li>
             <li><span className="text-second">Reviews</span></li>
           </ul>
@@ -27,7 +27,8 @@ const Navbar = () => {
             </summary>
             <ul className="absolute right-0 top-full flex min-w-40 flex-col items-center gap-y-2 bg-white p-4 font-Mont font-semibold text-[15px] leading-7.75 text-first shadow-[0_0_15px_0_#00000026]">
               <li><Link to="/about">About</Link></li>
-              <li>Features</li>
+              <li><Link to="/features">Features</Link></li>
+              
               <li>Demos</li>
               <li><span className="text-second">Reviews</span></li>
             </ul>

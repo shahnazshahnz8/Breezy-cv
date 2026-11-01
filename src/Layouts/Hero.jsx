@@ -4,7 +4,7 @@ import heroImage from '../assets/Images/hero.jpg'
 
 const Hero = () => {
   return (
-    <section id='about' className='relative pt-36.75 pb-20 after:bg-second after:absolute after:top-0 after:left-0 after:content-[""] after:w-full after:h-full after:-z-1 after:[clip-path:polygon(0_0,100%_0,100%_50%,0_100%)]'>
+    <section  className='relative pt-36.75 pb-20 after:bg-second after:absolute after:top-0 after:left-0 after:content-[""] after:w-full after:h-full after:-z-1 after:[clip-path:polygon(0_0,100%_0,100%_50%,0_100%)]'>
       <Container className='Hero'>
         <Flex className="hero justify-between heroFlex">
           {/* -------- Hero left div start------- */}
