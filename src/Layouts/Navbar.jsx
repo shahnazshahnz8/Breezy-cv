@@ -1,4 +1,4 @@
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 import Container from '../Components/Container'
 import Flex from '../Components/Flex'
 import logoImage from '../assets/Images/logo.png'

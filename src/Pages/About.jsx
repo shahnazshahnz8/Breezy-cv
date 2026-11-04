@@ -13,11 +13,11 @@ const About = () => {
       <Navbar />
       <TakeprofHero />
       <Software />
-      <Plagins/>
-      <Inner/>
-      <Core/>
-     <Download/>
-    
+      <Plagins />
+      <Inner />
+      <Core />
+      <Download />
+
     </>
   )
 }
