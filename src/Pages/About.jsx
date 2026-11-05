@@ -5,6 +5,7 @@ import Plagins from '../Layouts/Plagins'
 import Inner from '../Layouts/Inner'
 import Core from '../Layouts/Core'
 import Download from '../Layouts/Download'
+import Footer from '../Layouts/Footer'
 
 
 const About = () => {
@@ -17,6 +18,7 @@ const About = () => {
       <Inner />
       <Core />
       <Download />
+      <Footer/>
 
     </>
   )

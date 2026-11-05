@@ -1,9 +1,9 @@
 import React from 'react'
 import { FaCheck } from 'react-icons/fa'
 
-const PricingCard = ({ heading, price, duration }) => {
+const PricingCard = ({ heading, price, duration,className }) => {
     return (
-        <div className='w-[366px] bg-[#f3f3f3] rounded-[10px] pt-[50px] '>
+        <div className={`md:w-[366px] bg-[#f3f3f3] rounded-[10px] pt-[50px] ${className}`}>
 
             <h1 className='font-rale font-bold text-[22px] leading-[29.44px] text-seventh pl-7.5'>{heading}</h1>
 
