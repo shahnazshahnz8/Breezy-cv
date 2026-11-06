@@ -2,8 +2,12 @@ import { Link } from 'react-router-dom'
 import Container from '../Components/Container'
 import Flex from '../Components/Flex'
 import logoImage from '../assets/Images/logo.png'
+import { FaBars } from 'react-icons/fa'
+import { useState } from 'react'
+import { RxCross2 } from 'react-icons/rx'
 
 const Navbar = () => {
+  let [bar, setBar] = useState(false)
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-white shadow-[0_0_15px_0_#00000026] box-border py-7">
       <Container className="px-4">
@@ -19,20 +23,35 @@ const Navbar = () => {
             <li>Demos</li>
             <li><span className="text-second">Reviews</span></li>
           </ul>
-          <details className="mobile-nav relative md:hidden">
-            <summary className="flex cursor-pointer list-none flex-col gap-y-1 p-2" aria-label="Toggle navigation menu">
-              <span className="h-0.5 w-5 bg-black" />
-              <span className="h-0.5 w-5 bg-black" />
-              <span className="h-0.5 w-5 bg-black" />
-            </summary>
+
+            {/* -----------------------Mobile nav--------------------------- */}
+
+          <div className="relative md:hidden">
+            {
+              bar 
+              ? 
+              <RxCross2 onClick={()=> setBar (!bar)} className='text-2xl font-bold'/>
+              :
+              <FaBars onClick={()=> setBar (!bar)} className='text-2xl'/>
+             
+ 
+            }
+            
+
+              {
+                bar
+                &&
             <ul className="absolute right-0 top-full flex min-w-40 flex-col items-center gap-y-2 bg-white p-4 font-Mont font-semibold text-[15px] leading-7.75 text-first shadow-[0_0_15px_0_#00000026]">
               <li><Link to="/about">About</Link></li>
               <li><Link to="/features">Features</Link></li>
-              
+
               <li>Demos</li>
               <li><span className="text-second">Reviews</span></li>
             </ul>
-          </details>
+
+              }
+
+          </div>
         </Flex>
       </Container>
     </nav>
