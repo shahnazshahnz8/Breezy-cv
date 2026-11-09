@@ -3,7 +3,7 @@
   
   const RadingCard = ({Image, alt, className,headingClass,textClass, heading, text}) => {
     return (
-      <Flex className="pt-6.25 w-[350px]">
+      <Flex className="min-w-0 w-full flex-1 pt-6.25">
         <img src={Image} alt={alt} className={`pr-9 ${className}`} />
         <div>
             <h1 className={`font-inter font-bold text-[30px] text-sixth leading-10 ${headingClass}`}>{heading}</h1>

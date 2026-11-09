@@ -6,7 +6,7 @@ import PricingCard from '../Components/PricingCard'
 
 const Pricing = () => {
   const [type, setType] = useState(false)
-  console.log(type)
+  
   return (
     <section className='pt-20 md:pt-[213px] pb-[90px]'>
       <Container>
@@ -24,19 +24,18 @@ const Pricing = () => {
         {type
 
           ?
-          <Flex className="flex-col gap-y-4 md:flex-row md:justify-between">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-[repeat(2,minmax(0,366px))] justify-center sm:gap-4 lg:grid-cols-3 lg:gap-5 px-3">
             <PricingCard heading="Free Plan" price="$0" duration="/ monthly" />
             <PricingCard heading="Premium Plan" price="$599" duration="/ monthly" />
             <PricingCard heading="Business Plan" price="$999" duration="/ monthly" />
-          </Flex>
-
+          </div>
           :
-          <Flex className="flex-col gap-y-4 md:flex-row md:justify-between">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-[repeat(2,minmax(0,366px))] justify-center sm:gap-4 lg:grid-cols-3 lg:gap-5 px-3">
             <PricingCard heading="Free Plan" price="$0" duration="/ year" />
             <PricingCard heading="Premium Plan" price="$450" duration="/ year" />
             <PricingCard heading="Business Plan" price="$850" duration="/ year" />
 
-          </Flex>
+          </div>
         }
       </Container>
 

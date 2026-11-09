@@ -2,7 +2,7 @@ import Container from '../Components/Container'
 
 const TakeprofHero = () => {
     return (
-        <section className='pt-40 sm:pt-20 lg:pt-33'>
+        <section className='pt-40 sm:pt-25 lg:pt-33'>
             <Container>
                 <h1 className='mx-auto w-full max-w-[1200px] px-4 text-center font-han text-4xl font-semibold leading-tight text-[#111111] sm:text-5xl md:text-6xl lg:text-[85px] lg:leading-[96px]'>IT Solution & Technology
                     WordPress Theme</h1>

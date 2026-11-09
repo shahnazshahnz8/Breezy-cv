@@ -258,3 +258,9 @@
    }
  }
  
+ @media (min-width:768px) and (max-width:1023px) {
+  .product-image{
+    width: 500px;
+  
+ }
+}

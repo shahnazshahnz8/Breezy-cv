@@ -1,9 +1,10 @@
 import React from 'react'
-import Container from './Container'
-import Flex from './Flex'
+import Container from '../Components/Container'
+import Flex from '../Components/Flex'
 import { IoLogoWindows } from 'react-icons/io5'
 import { RiAppleFill } from 'react-icons/ri'
 import productImage from '../assets/productimg.png'
+
 
 const Product = () => {
     return (
@@ -35,7 +36,7 @@ const Product = () => {
 
                     </div>
                 </Flex>
-                <div className='md:w-[1145px] pt-[55px] pb-[70px]'>
+                <div className='lg:w-[1145px] pt-[55px] pb-[70px]'>
                     <img src={productImage} alt="" className='w-full' />
 
                 </div>

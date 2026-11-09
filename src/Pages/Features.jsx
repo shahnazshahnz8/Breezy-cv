@@ -2,8 +2,9 @@
    import Navbar from '../Layouts/Navbar'
 import SassHero from '../Layouts/SassHero'
 import Pricing from '../Layouts/Pricing'
-import Product from '../Components/Product'
+
 import Footer from '../Layouts/Footer'
+import Product from '../Layouts/Product'
 
    
    const Features = () => {

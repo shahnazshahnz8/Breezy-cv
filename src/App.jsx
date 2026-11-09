@@ -6,6 +6,7 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import Features from './Pages/Features'
 import Error from './Pages/Error'
+import Demos from "./Pages/Demos";
 
 
 const router = createBrowserRouter(
@@ -14,6 +15,8 @@ const router = createBrowserRouter(
       <Route path="/" element={<Home />}></Route>
       <Route path="/about" element={<About />}></Route>
       <Route path="/features" element={<Features />}></Route>
+      <Route path="/demos" element={<Demos />}></Route>
+     
       <Route path="*" element={<Error />}></Route>
       
     </>
